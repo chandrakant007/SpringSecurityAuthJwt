@@ -13,21 +13,19 @@ import com.ck.practice.SpringSecurityAuthJwt.model.UserEntity;
 @Service
 public class UserDetailsDaoImpl implements UserDetailsService {
 
- private final UserRepository userRepository;
+	private final UserRepository userRepository;
 
- public UserDetailsDaoImpl(UserRepository userRepository) {
-     this.userRepository = userRepository;
- }
+	public UserDetailsDaoImpl(UserRepository userRepository) {
+		this.userRepository = userRepository;
+	}
 
- // Called by AuthenticationProvider during username/password auth
- @Override
- public UserDetails loadUserByUsername(String username)
-         throws UsernameNotFoundException {
+	// Called by AuthenticationProvider during username/password auth
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-     UserEntity user = userRepository.findByUsername(username)
-             .orElseThrow(() ->
-                     new UsernameNotFoundException("User not found: " + username));
+		UserEntity user = userRepository.findByUsername(username)
+				.orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
 
-     return new AppUserDetails(user);
- }
+		return new AppUserDetails(user);
+	}
 }

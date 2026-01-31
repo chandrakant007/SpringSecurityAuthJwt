@@ -1,9 +1,9 @@
+C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Config\SecurityConfig.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Controller\AuthController.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Controller\HelloController.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\DAO\UserDetailsDaoImpl.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Filter\JwtAuthenticationFilter.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\model\UserEntity.java
-C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Package\SecurityConfig.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\proxy\AuthRequest.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\proxy\AuthResponse.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Repo\UserRepository.java
