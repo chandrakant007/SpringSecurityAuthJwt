@@ -1,5 +1,6 @@
 package com.ck.practice.SpringSecurityAuthJwt.Config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,6 +17,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.ck.practice.SpringSecurityAuthJwt.Filter.JwtAuthenticationFilter;
+import com.ck.practice.SpringSecurityAuthJwt.proxy.Dummy;
 
 @Configuration
 @EnableWebSecurity
@@ -80,4 +82,47 @@ public class SecurityConfig {
 
 		return http.build();
 	}
+
+	
 }
+
+/**
+ **
+ *
+ * @Configuration : This Configuration annotation tells Spring that whatever
+ *                method with @bean meantioned here, treat as bean
+ * @EnableWebSecurity : after spring boot 3/framework 6 - not much usefull, it
+ *                    is just usefull for bifurgation only Initial versio it is
+ *                    must required for enable websecrity, but letest version it
+ *                    is come with SecurityAutoConfiguration
+ *
+ * @AuthenticationProvider (Low Level) : This is interface, will provide user
+ *                         details. Use for spring injection
+ *                         DaoAuthenticationProvider : is just implementation of
+ *                         AuthenticationProvider(internal) helps to load
+ *                         username/PW and provide UserDetailsService :
+ *                         Interface having one method loadUserByUsername which
+ *                         will implement in custome dao
+ * 
+ * @AuthenticationManager (High Level): Manage all provider like
+ *                        AuthenticationProvider(DaoAuthenticationProvider),
+ *                        JwtAuthenticationProvider,
+ *                        OAuth2AuthenticationProvider, etc.
+ *                        AuthentcationManager AND AuthenticationProvider both
+ *                        Interface having one method authentic
+ *
+ * @BCryptPasswordEncoder : encode or hash the password, eachtime you get
+ *                        differernt PW.
+ *
+ * @Question : if 2 DaoImpl for same UserServiceDetail interface then build
+ *           failed - no unique bean error Solution: 1. @Primary, 2. @qualifier,
+ *           3. defineDaoImpl instead interface in configuration class
+ * 
+ * 
+ * @injection : 
+ * 
+ * @constructor : If not a bean, failed in Build time. Helpful when works with Mockito ot test framework
+ * @annotation autowire: also failed while build. helpful when many dependency
+ * @setter: not fail, helpful when not sure about dependency, helpful in optional dependecy
+ * 
+ */

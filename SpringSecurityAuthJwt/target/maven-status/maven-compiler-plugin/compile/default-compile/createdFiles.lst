@@ -1,5 +1,6 @@
 com\ck\practice\SpringSecurityAuthJwt\proxy\AuthRequest.class
 com\ck\practice\SpringSecurityAuthJwt\Services\JwtService.class
+com\ck\practice\SpringSecurityAuthJwt\proxy\Dummy.class
 com\ck\practice\SpringSecurityAuthJwt\SpringSecurityAuthJwtApplication.class
 com\ck\practice\SpringSecurityAuthJwt\proxy\AuthResponse.class
 com\ck\practice\SpringSecurityAuthJwt\Repo\UserRepository.class

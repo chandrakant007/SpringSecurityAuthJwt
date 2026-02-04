@@ -6,6 +6,7 @@ C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\model\UserEntity.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\proxy\AuthRequest.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\proxy\AuthResponse.java
+C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\proxy\Dummy.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Repo\UserRepository.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Services\AppUserDetails.java
 C:\GIT_OWN\SpringSecurityAuthJwt\SpringSecurityAuthJwt\SpringSecurityAuthJwt\src\main\java\com\ck\practice\SpringSecurityAuthJwt\Services\JwtService.java

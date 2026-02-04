@@ -3,10 +3,13 @@ package com.ck.practice.SpringSecurityAuthJwt.Services;
 import java.security.Key; // Use Java Security Key, NOT Hibernate Key
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
+
+import com.ck.practice.SpringSecurityAuthJwt.proxy.Dummy;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -23,7 +26,7 @@ public class JwtService {
 
  @Value("${security.jwt.expiration-ms:3600000}") // 1 hour
  private long expirationMs;
-
+ 
  private Key getSigningKey() {
      byte[] keyBytes = Decoders.BASE64.decode(secret);
      return Keys.hmacShaKeyFor(keyBytes);
@@ -67,4 +70,6 @@ public class JwtService {
              .parseClaimsJws(token)
              .getBody();
  }
+
+ 
 }

@@ -11,3 +11,14 @@ public class SpringSecurityAuthJwtApplication {
 	}
 
 }
+
+/**
+*
+* @SpringBootApplication is combination of 3 annotation
+* 
+* @SpringBootConfiguration          // Configuration क्लास
+* @EnableAutoConfiguration         // Auto‑configuration enable
+* @ComponentScan                   // Components scan (same package + sub‑packages)
+*
+*
+*/
